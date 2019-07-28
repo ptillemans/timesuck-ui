@@ -7,7 +7,7 @@ You can edit this file as you like.
 , name =
     "my-project"
 , dependencies =
-    [ "console", "effect", "halogen" ]
+    [ "console", "datetime", "effect", "halogen", "now" ]
 , packages =
     ./packages.dhall
 }
