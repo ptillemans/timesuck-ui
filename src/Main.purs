@@ -2,7 +2,7 @@ module Main where
 
 import Prelude
 
-import Components.WeekDay as WD
+import Components.WorkDay as WD
 import Effect (Effect)
 import Effect.Class (liftEffect)
 import Effect.Console (log)
@@ -15,4 +15,4 @@ main = HA.runHalogenAff do
   liftEffect $ log "🍝"
   today <- liftEffect $ nowDate
   body <- HA.awaitBody
-  runUI WD.weekDayComponent today body
+  runUI WD.workDayComponent today body
